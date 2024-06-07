@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Digital Portfolio - Home</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <body style="background-image: linear-gradient(to bottom, #2b7a78, 200px, #3AAFA9 200px, #3AAFA9 770px);">
+         <div class="navbar">
+            <p><a href="index.htm">
+               <img src="images/banner.png" alt="Digital Portfolio" height="auto" width="500px">
+               </a>
+            </p>
+         </div>
+         <div class="navbar" id="relative">
+            <a id="rcorner" class="active" href="index.htm">Home</a>
+            <a id="rcorner" href="unit1.htm">Unit 1</a>
+            <a id="rcorner" href="unit2.htm">Unit 2</a>
+            <a id="rcorner" href="unit13.htm">Unit 13</a>
+            <a id="rcorner" href="unit14.htm">Unit 14</a>
+            <a id="rcorner" href="unit8.htm">Unit 8</a>
+            <p class="course">Level 2 BTEC in Creative Technology and IT</p>
+         </div>
+         <br><br>
+         <div style="width:100%;">
+         <div style="width:49%; float:left;">
+<p>Unit 8 was about designing, creating and testing a mobile app using MIT App Inventor. We had to collect assets and create the app using predefined code we had made earlier. Overall, it was a simple unit to complete and didn't go bad at all.
+            </p>
+<a href="u8c.htm">Unit 8 Context Page<br>               <a href="https://cambria.ac.uk/">Coleg Cambria</a>
+<br>
+         </div>
+         <div style="width:49%; float: right;">
+           <img src="images/u8app.png" height="550">
+            </div>
+            <br><br>
+            <a href="https://www.knowitallninja.com/">Know It All Ninja</a>
+         </div>
+         <div style="width:49%; float:right;"></div>
+         <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+         </script>
+   </body>
+</html>

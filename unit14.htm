@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Digital Portfolio - Unit 14</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <body style="background-image: linear-gradient(to bottom, #2b7a78, 200px, #3AAFA9 200px, #3AAFA9 770px);">
+         <div class="navbar">
+            <p><a href="index.htm">
+               <img src="images/banner.png" alt="Digital Portfolio" height="auto" width="500px">
+               </a>
+            </p>
+         </div>
+         <div class="navbar" id="relative">
+            <a id="rcorner" class="active" href="index.htm">Home</a>
+            <a id="rcorner" href="unit1.htm">Unit 1</a>
+            <a id="rcorner" href="unit2.htm">Unit 2</a>
+            <a id="rcorner" href="unit13.htm">Unit 13</a>
+            <a id="rcorner" href="unit14.htm">Unit 14</a>
+            <a id="rcorner" href="unit8.htm">Unit 8</a>
+            <p class="course">Level 2 BTEC in Creative Technology and IT</p>
+         </div>
+         <br><br>
+         <div style="width:100%;">
+         <div style="width:49%; float:left;">
+            <p>These screenshots show Unit 14 Assignment 2. They show mainly work that I have done, however the third one is for fault finding tools and techniques. We had to find parts that were under the budget and fit the system to upgrade it with.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </p>
+         </div>
+         <div style="width:49%; float: right;">
+            <div class="slideshow-container">
+               <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="images/u14a2_1.png" style="width:100%">
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="images/u14a2_2.png" style="width:100%">
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="images/u14a2_3.png" style="width:100%">
+               </div>
+               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+               <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+               <span class="dot" onclick="currentSlide(1)"></span>
+               <span class="dot" onclick="currentSlide(2)"></span>
+               <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <br>
+         </div>
+
+         <div style="width:100%;">
+         <div style="width:49%; float:left;">
+<img src="images/u14a3_1.png" width="98%">
+         </div>
+         <div style="width:49%; float: right;">
+<p>This image shows the planning document for the Unit 14 Assignment 3 practical assessment. This specifically is the job sheet, giving information on the system, faults found, fix applied, internal and externally installed hardware and more.
+             <br><br>  <a href="https://cambria.ac.uk/">Coleg Cambria</a><br>
+
+            <br>
+         </div>
+         <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+         </script>
+   </body>
+</html>

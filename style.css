@@ -1,0 +1,206 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 1280px;
+  background-color: #3AAFA9;
+  color: #000;
+  text-align: justify;
+  margin: auto;
+  line-height: 1.2em;
+}
+
+html {
+  min-height: 100%;
+}
+
+a {
+  color: #DEF2F1;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #CDEBEA;
+}
+
+a:hover {
+  color: #E0F3F2;
+}
+
+h1 {
+  color: #fff;
+  font-family: sans-serif
+  font-size: 21px
+}
+
+h2 {
+  color: #fff;
+  font-family: sans-serif
+}
+
+h3 {
+  color: #fff;
+  font-family: sans-serif
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 25%;
+}
+
+p {
+  font-size: 18px;
+  color: #fff
+}
+.topicsare {
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+.la {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar {
+  width: 48%;
+  font-size: 18px;
+  display: inline-block;
+  margin-left: 20px float: right;
+  text-align: right;
+}
+
+.text {
+  width: 50%;
+  font-size: 18px;
+  display: inline-block;
+  margin-left: 20px float: right;
+  text-align: right;
+
+  position: relative;
+}
+
+.course {
+  font-weight: 600;
+  color: #FFF;
+}
+
+#rcorner {
+  color: #FFF;
+  border-radius: 5px;
+  border: 2px solid #FFF;
+  background-color: #077191;
+  padding: 10px;
+}
+
+#rcorner2 {
+  color: #FFF;
+  border-radius: 5px;
+  border: 2px solid #FFF;
+  background-color: #066682;
+  padding: 10px;
+}
+
+#relative {
+  position: relative;
+  bottom: 35px;
+}
+
+.column {
+  padding: 10px;
+  margin: 10px;	
+}
+
+.about {
+  color: white;
+}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  padding-top: 5px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  font-size: 25px;
+  background: #00006a;
+  text-align: center;
+  padding: 12px
+}

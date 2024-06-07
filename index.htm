@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Digital Portfolio - Home</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <body style="background-image: linear-gradient(to bottom, #2b7a78, 200px, #3AAFA9 200px, #3AAFA9 770px);">
+         <div class="navbar">
+            <p><a href="index.htm">
+               <img src="images/banner.png" alt="Digital Portfolio" height="auto" width="500px">
+               </a>
+            </p>
+         </div>
+         <div class="navbar" id="relative">
+            <a id="rcorner" class="active" href="index.htm">Home</a>
+            <a id="rcorner" href="unit1.htm">Unit 1</a>
+            <a id="rcorner" href="unit2.htm">Unit 2</a>
+            <a id="rcorner" href="unit13.htm">Unit 13</a>
+            <a id="rcorner" href="unit14.htm">Unit 14</a>
+            <a id="rcorner" href="unit8.htm">Unit 8</a>
+            <p class="course">Level 2 BTEC in Creative Technology and IT</p>
+         </div>
+         <div class="slideshow-container">
+            <div class="mySlides fade">
+               <div class="numbertext">1 / 3</div>
+               <img src="images/cambria1.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+               <div class="numbertext">2 / 3</div>
+               <img src="images/cambria2.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+               <div class="numbertext">3 / 3</div>
+               <img src="images/cambria3.png" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+         </div>
+         <br>
+         <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+         </div>
+         <div>
+         <div class="about">
+            <h2>About Me</h2>
+            <p>My name is Jack Roberts, I'm 17 years old and currently study at Coleg Cambria in Deeside. I'm on the Level 2 BTEC in Creative Technology and IT course, which you can learn more about with this portfolio. I will discuss the work I have done, give examples of the methods of study and also show my work done during the course.</p>
+         </div>
+         <a class="web" href="https://www.cambria.ac.uk/">Coleg Cambria Website</a>
+         <br>
+         <br><br><br>
+         </main>
+         <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+         </script>
+   </body>
+</html>

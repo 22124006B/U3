@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Digital Portfolio - Home</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <body style="background-image: linear-gradient(to bottom, #2b7a78, 200px, #3AAFA9 200px, #3AAFA9 770px);">
+         <div class="navbar">
+            <p><a href="index.htm">
+               <img src="images/banner.png" alt="Digital Portfolio" height="auto" width="500px">
+               </a>
+            </p>
+         </div>
+         <div class="navbar" id="relative">
+            <a id="rcorner" class="active" href="index.htm">Home</a>
+            <a id="rcorner" href="unit1.htm">Unit 1</a>
+            <a id="rcorner" href="unit2.htm">Unit 2</a>
+            <a id="rcorner" href="unit13.htm">Unit 13</a>
+            <a id="rcorner" href="unit14.htm">Unit 14</a>
+            <a id="rcorner" href="unit8.htm">Unit 8</a>
+            <p class="course">Level 2 BTEC in Creative Technology and IT</p>
+         </div>
+         <br><br>
+         <div style="width:100%;">
+         <div style="width:49%; float:left;">
+            <p>This unit was about creating a design for a website, creating it and reviewing it. Similarly to Unit 8, we made something before to test it and then began designing and creating.
+            </p>
+         </div>
+         <div style="width:49%; float: right;">
+            <div class="slideshow-container">
+               <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="images/mws1.png" style="width:100%">
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="images/mws2.png" style="width:100%">
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="images/mws3.png" style="width:100%">
+               </div>
+               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+               <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+               <span class="dot" onclick="currentSlide(1)"></span>
+               <span class="dot" onclick="currentSlide(2)"></span>
+               <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <br>
+
+            <a href="u13c.htm">Unit 13 Context Page</a><br>
+               <a href="https://cambria.ac.uk/">Coleg Cambria</a>
+         </div>
+         <div style="width:49%; float:right;"></div>
+<div>
+
+<video width="630px" controls>
+  <source src="images/mws.mp4" type="video/mp4"></video>
+         </div><script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+         </script>
+   </body>
+</html>
